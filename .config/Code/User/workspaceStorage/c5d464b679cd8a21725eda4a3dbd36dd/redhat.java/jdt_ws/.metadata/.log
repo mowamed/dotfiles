@@ -1,0 +1,210 @@
+!SESSION 2018-02-20 14:44:02.814 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/bakus/.config/Code/User/workspaceStorage/c5d464b679cd8a21725eda4a3dbd36dd/redhat.java/jdt_ws
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:10.431
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:10.895
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:10.992
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:10.995
+!MESSAGE Initializing Java Language Server 0.13.0.201802160000
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:11.102
+!MESSAGE Installed reference:file:/home/bakus/.vscode/extensions/vscjava.vscode-java-debug-0.6.0/server/com.microsoft.java.debug.plugin-0.6.0.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:11.181
+!MESSAGE Installed reference:file:/home/bakus/.vscode/extensions/vscjava.vscode-java-test-0.3.0/server/com.microsoft.java.test.plugin-0.3.0.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:11.265
+!MESSAGE Started reference:file:/home/bakus/.vscode/extensions/vscjava.vscode-java-debug-0.6.0/server/com.microsoft.java.debug.plugin-0.6.0.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:11.266
+!MESSAGE Started reference:file:/home/bakus/.vscode/extensions/vscjava.vscode-java-test-0.3.0/server/com.microsoft.java.test.plugin-0.3.0.jar
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:11.501
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:11.519
+!MESSAGE Creating the default Java project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:14.341
+!MESSAGE Finished creating the default Java project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:44:18.145
+!MESSAGE Importing Gradle project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 14:49:17.185
+!MESSAGE Timeout while waiting for completion of job: Initialize Workspace(20)
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2018-02-20 15:06:19.571
+!MESSAGE Initialization failed 
+!STACK 0
+org.gradle.tooling.GradleConnectionException: Could not install Gradle distribution from 'https://services.gradle.org/distributions/gradle-4.3-bin.zip'.
+	at org.gradle.tooling.internal.consumer.DistributionFactory$ZippedDistribution.getToolingImplementationClasspath(DistributionFactory.java:137)
+	at org.gradle.tooling.internal.consumer.loader.CachingToolingImplementationLoader.create(CachingToolingImplementationLoader.java:40)
+	at org.gradle.tooling.internal.consumer.loader.SynchronizedToolingImplementationLoader.create(SynchronizedToolingImplementationLoader.java:43)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.onStartAction(LazyConsumerActionExecutor.java:101)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:83)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:58)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:55)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultModelBuilder.get(DefaultModelBuilder.java:50)
+	at org.gradle.tooling.internal.consumer.DefaultProjectConnection.getModel(DefaultProjectConnection.java:41)
+	at org.eclipse.buildship.core.workspace.internal.ConnectionAwareLauncherProxy.newModelBuilder(ConnectionAwareLauncherProxy.java:64)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchModel(DefaultModelProvider.java:68)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.supportsCompositeBuilds(DefaultModelProvider.java:165)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchModels(DefaultModelProvider.java:75)
+	at org.eclipse.buildship.core.workspace.internal.DefaultModelProvider.fetchEclipseGradleProjects(DefaultModelProvider.java:99)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.startSynchronization(GradleProjectImporter.java:150)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.importDir(GradleProjectImporter.java:97)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.lambda$0(GradleProjectImporter.java:89)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1380)
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1081)
+	at org.eclipse.jdt.ls.core.internal.managers.GradleProjectImporter.importToWorkspace(GradleProjectImporter.java:89)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:105)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.access$1(ProjectsManager.java:99)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager$1.run(ProjectsManager.java:93)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:38)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:732)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2214)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5676)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5633)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:86)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:193)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+Caused by: java.util.zip.ZipException: zip END header not found
+	at java.base/java.util.zip.ZipFile$Source.zerror(ZipFile.java:1252)
+	at java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1153)
+	at java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1160)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:997)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:960)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:216)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:148)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:162)
+	at org.gradle.wrapper.Install.unzip(Install.java:215)
+	at org.gradle.wrapper.Install.access$600(Install.java:27)
+	at org.gradle.wrapper.Install$1.call(Install.java:75)
+	at org.gradle.wrapper.Install$1.call(Install.java:48)
+	at org.gradle.wrapper.ExclusiveFileAccessManager.access(ExclusiveFileAccessManager.java:69)
+	at org.gradle.wrapper.Install.createDist(Install.java:48)
+	at org.gradle.tooling.internal.consumer.DistributionInstaller.install(DistributionInstaller.java:72)
+	at org.gradle.tooling.internal.consumer.DistributionFactory$ZippedDistribution.getToolingImplementationClasspath(DistributionFactory.java:131)
+	at org.gradle.tooling.internal.consumer.loader.CachingToolingImplementationLoader.create(CachingToolingImplementationLoader.java:40)
+	at org.gradle.tooling.internal.consumer.loader.SynchronizedToolingImplementationLoader.create(SynchronizedToolingImplementationLoader.java:43)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.onStartAction(LazyConsumerActionExecutor.java:101)
+	at org.gradle.tooling.internal.consumer.connection.LazyConsumerActionExecutor.run(LazyConsumerActionExecutor.java:83)
+	at org.gradle.tooling.internal.consumer.connection.CancellableConsumerActionExecutor.run(CancellableConsumerActionExecutor.java:45)
+	at org.gradle.tooling.internal.consumer.connection.ProgressLoggingConsumerActionExecutor.run(ProgressLoggingConsumerActionExecutor.java:58)
+	at org.gradle.tooling.internal.consumer.connection.RethrowingErrorsConsumerActionExecutor.run(RethrowingErrorsConsumerActionExecutor.java:38)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:55)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:23.020
+!MESSAGE >>New configuration: {java={home=null, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={updateBuildConfiguration=interactive, maven={userSettings=null}}, trace={server=off}, import={gradle={enabled=true}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true}, saveActions={organizeImports=false}, contentProvider={preferred=null}, autobuild={enabled=true}, completion={favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*], importOrder=[java, javax, com, org]}, debug={logLevel=warn, settings={showHex=false, showStaticVariables=true, showQualifiedNames=false, maxStringLength=0.0, enableHotCodeReplace=false}}, test={report={position=sideView}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:23.053
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:24.479
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///home/bakus/Documents/Projects/Ionic/br-qr-scan/platforms/android/app/src/main/java/com/phonegap/plugins/barcodescanner/BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:25.268
+!MESSAGE Caching AST for /jdt.ls-java-project/src/com/phonegap/plugins/barcodescanner/BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:26.671
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:27.050
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:27.050
+!MESSAGE Caching AST for /jdt.ls-java-project/src/com/phonegap/plugins/barcodescanner/BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:27.233
+!MESSAGE begin problem for /BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:27.234
+!MESSAGE 0 problems reported for /BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:27.292
+!MESSAGE Reconciled 0, validated: 1. Took 627 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:27.293
+!MESSAGE Clearing problems for /BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:27.294
+!MESSAGE Releasing AST for /jdt.ls-java-project/src/com/phonegap/plugins/barcodescanner/BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:27.323
+!MESSAGE >> workspace/didChangeWatchedFiles 
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:27.615
+!MESSAGE >> workspace/didChangeWatchedFiles 
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:29.098
+!MESSAGE >> workspace/executeCommand vscode.java.test.search.all
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 15:06:29.740
+!MESSAGE >> workspace/executeCommand vscode.java.test.runtime.classpath
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:36:30.113
+!MESSAGE >> workspace/didChangeWatchedFiles 
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.114
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.120
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///home/bakus/Documents/Projects/Ionic/br-qr-scan/platforms/android/app/src/main/java/com/phonegap/plugins/barcodescanner/BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.131
+!MESSAGE Caching AST for /jdt.ls-java-project/src/com/phonegap/plugins/barcodescanner/BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.384
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.400
+!MESSAGE >> workspace/executeCommand vscode.java.test.fetch
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.754
+!MESSAGE Releasing all ASTs
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.755
+!MESSAGE Caching AST for /jdt.ls-java-project/src/com/phonegap/plugins/barcodescanner/BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.898
+!MESSAGE begin problem for /BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.898
+!MESSAGE 0 problems reported for /BarcodeScanner.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:37:53.900
+!MESSAGE Reconciled 0, validated: 1. Took 320 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:39:39.936
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-02-20 18:43:23.052
+!MESSAGE >> workspace/didChangeWatchedFiles 

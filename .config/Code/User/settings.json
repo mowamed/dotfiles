@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Darcula Theme 2.0",
+    "workbench.iconTheme": "material-icon-theme",
+    "vsicons.projectDetection.autoReload": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "gitlens.keymap": "alternate",
+    "git.autofetch": true,
+    "window.zoomLevel": 0,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "python.jediEnabled": false,
+    "terminal.integrated.rendererType": "dom",
+    "window.titleBarStyle": "custom",
+    "files.associations": {
+        "*.html": "html"
+    }
+}

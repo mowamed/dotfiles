@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/bakus/.config/Code/User/workspaceStorage/057734996d902e329afc85e5ed7bac9e/redhat.java/jdt_ws/.metadata/.plugins/org.eclipse.jdt.core
+4013607337.index
+3842426239.index
+2073123464.index
